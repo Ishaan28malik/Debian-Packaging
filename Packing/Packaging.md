@@ -1,7 +1,10 @@
-Debian packaging (noob guide)
-Disclaimer :- There is a well flourished guide on the subject already ,this is just
+# Debian packaging (noob guide)
+
+* Disclaimer :- There is a well flourished guide on the subject already ,this is just
 my version of it .
-Links
+
+## Links
+
 • (Debian Packaging pre requisites)
 https://www.loomio.org/d/LTpSdMuX/debian-packaging-pre-requisites
 •
@@ -16,10 +19,14 @@ https://tracker.debian.org/
 https://paste.debian.net/
 • (Choose a node-module from here)
 https://pad.disroot.org/p/node_packaging
+
 From the Debian Packaging pre requisites link I followed docker setup
-Arch based distros (installation)
-Install docker by running pacman -Sy docker
-Start and enable docker systemctl start docker && systemctl enable docker
+
+* Arch based distros (installation)
+
+* Install docker by running pacman -Sy docker
+
+* Start and enable docker systemctl start docker && systemctl enable docker
 Pull Debian Sid image from docker hub using the following command
 docker pull debian:sid
 Create a container with it and start bash on it
@@ -28,10 +35,15 @@ Update and upgrade to latest versions of packagesapt-get update && apt-get upgra
 Exit after your work is done. If you need to connect to it later, use the following
 commands which will take you to the bash prompt , if you encounter permission
 issues try with sudo
-docker start sid
-docker attach sid
-If successful you will be presented with a shell similar to this
-root@5c7bdbda2ce5:/#
+
+`docker start sid`
+
+`docker attach sid`
+
+* If successful you will be presented with a shell similar to this
+
+`root@5c7bdbda2ce5:/#`
+
 Setup password for root account
 passwd root
 Its better to add a normal user and set a password
@@ -184,8 +196,10 @@ Build-Depends:
 debhelper (>= 9)
 , dh-buildinfo, nodejs
 , node-tap
-Standards-Version: 4.1.2
+
+* Standards-Version: 4.1.2
 add a Test-Command section to debian/tests/control
+
 $ cat tests/control
 Tests: require
 Depends: node-qw
