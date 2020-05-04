@@ -6,3 +6,5 @@
 * Also contains some useful Linux commands
 
 To become a member here is the [Link](https://nm.debian.org/)
+
+A guide to become a better Debian Developer [Blog](https://www.devdungeon.com/content/debian-package-tutorial-dpkgdeb)
