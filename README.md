@@ -4,3 +4,5 @@
 
 ### A beginners guide to start with Debian Packaging 
 * Also contains some useful Linux commands
+
+To become a member here is the [Link](https://nm.debian.org/)
